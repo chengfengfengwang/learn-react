@@ -9,3 +9,6 @@ return <div>
     <Table {...props}  columns={columns} />
 </div>
 ```
+# state type
+给state定义type 默认为{}
+https://stackoverflow.com/questions/47561848/property-value-does-not-exist-on-type-readonly
