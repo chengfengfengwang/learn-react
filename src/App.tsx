@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import MyTable from './MyTable';
+import TestState from './components/testState';
 
 const dataSource = [
   {
@@ -24,6 +25,7 @@ function App() {
   return (
     <div>
       <MyTable tableTitle='hello world' loading={loading} dataSource={dataSource} />
+      <TestState /> 
     </div>
   );
 }
