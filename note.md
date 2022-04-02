@@ -33,3 +33,6 @@ this.setState({
 this.state.comment = 'Hello';
 ```
 3. state会自动合并
+# Object is possibly 'null'
+this.input.current.value // 报错this.input.current 可能为null
+this.input.current?.value // 解决

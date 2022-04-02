@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import MyTable from './MyTable';
+import MyTable from './components/MyTable';
 import TestState from './components/testState';
+import TestRefs from './components/testRefs';
 
 const dataSource = [
   {
@@ -26,6 +27,7 @@ function App() {
     <div>
       <MyTable tableTitle='hello world' loading={loading} dataSource={dataSource} />
       <TestState /> 
+      <TestRefs />
     </div>
   );
 }
