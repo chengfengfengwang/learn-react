@@ -1,6 +1,6 @@
 import React from "react";
-
-class MouseTracker extends React.Component<{render: (position:{x: number, y: number})=>{}}, {x: number, y: number}> {
+import {CatFn} from './useMouseRenderProps'
+class MouseTracker extends React.Component<{render: CatFn}, {x: number, y: number}> {
     constructor(props: any) {
         super(props);
         this.state = {

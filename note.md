@@ -9,6 +9,13 @@ return <div>
     <Table {...props}  columns={columns} />
 </div>
 ```
+# react function component type
+函数返回类型是 JSX.Element
+```
+export type CatFn = ({ x, y }: {x?: number, y?: number}) => JSX.Element
+const Cat: CatFn =  ({x, y}) => <div style={{position: 'absolute', left: x, top: y}}>i am cat</div>;
+```
+https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components/
 # state type
 给state定义type 默认为{}
 https://stackoverflow.com/questions/47561848/property-value-does-not-exist-on-type-readonly

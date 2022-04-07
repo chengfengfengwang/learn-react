@@ -3,13 +3,16 @@ import TestState from './components/testState';
 import TestRefs from './components/testRefs';
 import UseMytable from './components/MyTable/UseMytable';
 import RenderProps from './components/renderProps/useMouseRenderProps'
+import CodeSpliting from './components/codeSpliting/index'
+
 function App() {
   return (
     <div>
       {/* <UseMytable />
       <TestState /> 
       <TestRefs /> */}
-      <RenderProps />
+      {/* <RenderProps /> */}
+      <CodeSpliting />
     </div>
   );
 }
