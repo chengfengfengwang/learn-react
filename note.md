@@ -13,7 +13,8 @@ return <div>
 函数返回类型是 JSX.Element
 ```
 export type CatFn = ({ x, y }: {x?: number, y?: number}) => JSX.Element
-const Cat: CatFn =  ({x, y}) => <div style={{position: 'absolute', left: x, top: y}}>i am cat</div>;
+
+const Cat: CatFn = ({x, y}) => <div style={{position: 'absolute', left: x, top: y}}>i am cat</div>;
 ```
 https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components/
 # state type
@@ -43,3 +44,9 @@ this.state.comment = 'Hello';
 # Object is possibly 'null'
 this.input.current.value // 报错this.input.current 可能为null
 this.input.current?.value // 解决
+
+# hoc
+1. hoc接收一个组件作为参数，让这个组件承担渲染功能
+2. hoc本身有state，有生命周期， 有自己更新state的逻辑和解除绑定的逻辑
+3. state更新之后，触发传入组件的更新
+4. 把state 传入参数组件

@@ -4,7 +4,9 @@ import './App.css';
 // import UseMytable from './components/MyTable/UseMytable';
 // import RenderProps from './components/renderProps/useMouseRenderProps'
 // import CodeSpliting from './components/codeSpliting/index'
-import FragmentComponent from './components/fragment/index'
+// import FragmentComponent from './components/fragment/index'
+import Hoc from './components/hoc/index'
+
 function App() {
   return (
     <div className='app'>
@@ -13,7 +15,8 @@ function App() {
       <TestRefs /> */}
       {/* <RenderProps /> */}
       {/* <CodeSpliting /> */}
-      <FragmentComponent />
+      {/* <FragmentComponent /> */}
+      <Hoc />
     </div>
   );
 }
