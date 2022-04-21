@@ -23,6 +23,7 @@ https://stackoverflow.com/questions/47561848/property-value-does-not-exist-on-ty
 
 # state 注意事项
 1. state可能是异步的
+参考链接： https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/18
 ```
 this.setState({
     age: 1
